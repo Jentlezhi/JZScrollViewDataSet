@@ -56,6 +56,14 @@ static char const * const kEmptyDataSetView =       "emptyDataSetView";
 @property (nonatomic, readonly) JZEmptyDataSetView *emptyDataSetView;
 @end
 
+@interface UIScrollView (JZEmptyDataSet)
+
+@property(nonatomic, weak) id emptyDataSetSource;
+
+@property(nonatomic, weak) id emptyDataSetDelegate;
+
+@end
+
 @implementation UIScrollView (JZEmptyDataSet)
 
 #pragma mark - Getters (Public)
@@ -1128,6 +1136,8 @@ Class jz_baseClassToSwizzleForTarget(id target)
 
 @property(nonatomic, strong) UIView *errorView;
 
+@property(nonatomic, copy) void(^tapBlock)(void);
+
 @end
 
 @implementation JZScrollViewDataSet
@@ -1137,6 +1147,11 @@ Class jz_baseClassToSwizzleForTarget(id target)
     return [self dataSetWithEmptyView:emptyViewBlock errorView:nil config:nil];
 }
 
++ (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nonnull)(void))emptyViewBlock
+                                 tap:(void(^__nullable)(void))tapBlock { 
+    return [self dataSetWithEmptyView:emptyViewBlock errorView:nil config:nil tap:tapBlock];
+}
+
 + (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nullable)(void))emptyViewBlock
                             errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock {
     return [self dataSetWithEmptyView:emptyViewBlock errorView:errorViewBlock config:nil];
@@ -1144,7 +1159,20 @@ Class jz_baseClassToSwizzleForTarget(id target)
 
 + (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nullable)(void))emptyViewBlock
                             errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock
+                                 tap:(void(^__nullable)(void))tapBlock {
+    return [self dataSetWithEmptyView:emptyViewBlock errorView:errorViewBlock config:nil tap:tapBlock];
+}
+
++ (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nullable)(void))emptyViewBlock
+                            errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock
                                config:(void (^__nullable)(JZScrollViewDataSetConfig *config))configBlock {
+    return [self dataSetWithEmptyView:emptyViewBlock errorView:errorViewBlock config:configBlock tap:nil];
+}
+
++ (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nullable)(void))emptyViewBlock
+                            errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock
+                              config:(void (^__nullable)(JZScrollViewDataSetConfig *config))configBlock
+                                 tap:(void(^__nullable)(void))tapBlock {
     JZScrollViewDataSet *dataSet = [JZScrollViewDataSet new];
     if (emptyViewBlock) {
         dataSet.emptyView = emptyViewBlock();
@@ -1154,6 +1182,9 @@ Class jz_baseClassToSwizzleForTarget(id target)
     }
     if (configBlock) {
         configBlock(dataSet.config);
+    }
+    if (tapBlock) {
+        dataSet.tapBlock = tapBlock;
     }
     return dataSet;
 }
@@ -1226,7 +1257,9 @@ Class jz_baseClassToSwizzleForTarget(id target)
     }
     CGFloat safeAreaTop = 0.f;
     if (window != nil) {
-        safeAreaTop = window.safeAreaInsets.top;
+        if (@available(iOS 11.0, *)) {
+            safeAreaTop = window.safeAreaInsets.top;
+        }
     }
     return (safeAreaTop + 44.f)*0.5f;
 }
@@ -1247,20 +1280,48 @@ Class jz_baseClassToSwizzleForTarget(id target)
     NSLayoutConstraint *heightConstraint = [NSLayoutConstraint constraintWithItem:item attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:self.containerView attribute:NSLayoutAttributeHeight multiplier:1.0 constant:0.f];
     [self.containerView addConstraint:heightConstraint];
 }
+/**
+ 获取DataSetView
+ @return DataSetView
+ */
+- (UIView *)dataSetView {
+    Class cls = NSClassFromString(@"JZEmptyDataSetView");
+    __block UIView *dataSetView;
+    [self.scrollView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if ([obj isMemberOfClass:cls]) {
+            dataSetView = obj;
+            *stop = YES;
+        }
+    }];
+    return dataSetView;
+}
+- (void)addTapGestureForView:(UIView *)view {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
+    [view addGestureRecognizer:tap];
+}
+- (void)tapAction {
+    !self.tapBlock?:self.tapBlock();
+}
 #pragma mark - Lazy load
-
 - (JZScrollViewDataSetConfig *)config {
     if (!_config) {
         _config = [JZScrollViewDataSetConfig defaultConfig];
     }
     return _config;
 }
-
 - (UIView *)containerView {
     if (!_containerView) {
         _containerView = [UIView new];
     }
     return _containerView;
+}
+
+#pragma mark - Setter
+- (void)setScrollView:(UIScrollView *)scrollView {
+    _scrollView = scrollView;
+    if (self.tapBlock) {
+        [self addTapGestureForView:scrollView];
+    }
 }
 
 @end

@@ -274,7 +274,7 @@ typedef NS_ENUM(NSUInteger, JZScrollViewDataSetType) {
     JZScrollViewDataSetTypeHidden
 };
 
-@property(nonatomic, weak) id<JZEmptyDataSetSource,JZEmptyDataSetDelegate> dataSet;
+@property(nonatomic, strong) id<JZEmptyDataSetSource,JZEmptyDataSetDelegate> dataSet;
 @property(nonatomic, assign) JZScrollViewDataSetType dataSetType;
 
 @end
@@ -305,6 +305,14 @@ typedef NS_ENUM(NSUInteger, JZScrollViewDataSetType) {
  @return DataSet
  */
 + (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nonnull)(void))emptyViewBlock;
+/**
+ 初始化DataSet
+ @param emptyViewBlock    创建空视图的block
+ @param tapBlock          点击空白回调的block
+ @return DataSet
+ */
++ (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nonnull)(void))emptyViewBlock
+                                 tap:(void(^__nullable)(void))tapBlock;
 
 /**
  初始化DataSet
@@ -314,6 +322,16 @@ typedef NS_ENUM(NSUInteger, JZScrollViewDataSetType) {
  */
 + (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nullable)(void))emptyViewBlock
                            errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock;
+/**
+ 初始化DataSet
+ @param emptyViewBlock    创建空视图的block
+ @param errorViewBlock    创建错误视图的block
+ @param tapBlock          点击空白回调的block
+ @return DataSet
+ */
++ (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nullable)(void))emptyViewBlock
+                            errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock
+                                 tap:(void(^__nullable)(void))tapBlock;
 
 /**
  初始化DataSet
@@ -325,6 +343,18 @@ typedef NS_ENUM(NSUInteger, JZScrollViewDataSetType) {
 + (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nullable)(void))emptyViewBlock
                             errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock
                                config:(void (^__nullable)(JZScrollViewDataSetConfig *config))configBlock;
+/**
+ 初始化DataSet
+ @param emptyViewBlock    创建空视图的block
+ @param errorViewBlock    创建错误视图的block
+ @param configBlock       设置配置内容的block
+ @param tapBlock          点击空白响应事件的block
+ @return DataSet
+ */
++ (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nullable)(void))emptyViewBlock
+                            errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock
+                              config:(void (^__nullable)(JZScrollViewDataSetConfig *config))configBlock
+                                 tap:(void(^__nullable)(void))tapBlock;
 
 @end
 
