@@ -1,0 +1,16 @@
+PODS:
+  - JZScrollViewDataSet (0.1.0)
+
+DEPENDENCIES:
+  - JZScrollViewDataSet (from `../`)
+
+EXTERNAL SOURCES:
+  JZScrollViewDataSet:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JZScrollViewDataSet: d3c4c64b21f1e1421364233a3e2ae3d572c98ce9
+
+PODFILE CHECKSUM: 604a7ce5f198b79c8fa8a229579ed7e7f226f470
+
+COCOAPODS: 1.12.1
