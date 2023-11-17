@@ -1196,7 +1196,7 @@ Class jz_baseClassToSwizzleForTarget(id target)
  动态调整视图
  */
 - (UIView *)customView {
-    [self.containerView removeAllSubviews];
+    [self.containerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     UIView *customView;
     JZScrollViewDataSetType type = self.scrollView.dataSetType;
     if (type == JZScrollViewDataSetTypeEmpty) {

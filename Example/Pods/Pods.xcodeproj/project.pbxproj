@@ -9,65 +9,67 @@
 /* Begin PBXBuildFile section */
 		123BFB264DFB71BA6DE3B00098D7FB3C /* Pods-JZScrollViewDataSet_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1743E838FAA910A5D711060BA5533360 /* Pods-JZScrollViewDataSet_Tests-dummy.m */; };
 		1764F062A3D4004FD96826B05C3AFBF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		1842B5775DED90091626BB5ECD64EA51 /* JZScrollViewDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EEA1B4B2DC4AE5AC0189CCC6BE2FEE0 /* JZScrollViewDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CC347F1C76AA10332EE44619304D242 /* JZScrollViewDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC3753E5DC709313DDECE4A3F0F1B4D /* JZScrollViewDataSet-dummy.m */; };
+		2FD465B3AC527FB690C0294F23E01192 /* JZScrollViewDataSet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BEF5366A48A9B593A4F281D45EC /* JZScrollViewDataSet-dummy.m */; };
+		47CE635C55258411799E29F18C4042D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5B0A7ED38F5AADED9D0F590AF267D58D /* JZScrollViewDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = C25807AA59033A454CBC221B5435ED2E /* JZScrollViewDataSet.m */; };
 		5B17B4681831A28C63FD03936A61C02E /* Pods-JZScrollViewDataSet_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE941C88EC7C8B02A7729507B2D561B /* Pods-JZScrollViewDataSet_Example-dummy.m */; };
 		625DBFFD8036561ECF3282D7C490ED1B /* Pods-JZScrollViewDataSet_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8638F119F8E4550FC3D4118A617BB5DE /* Pods-JZScrollViewDataSet_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64475BB94DB4ECBC1E09A3F1B0E5E733 /* JZScrollViewDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1C5A717D3E3B5D3167E34CB0BC51B3 /* JZScrollViewDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74A75121F63E7C76EE5F3889452F788A /* JZScrollViewDataSet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4DFB94DDCECBC903BBE3B13A44256EE /* JZScrollViewDataSet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A5ACFEBDC911C37D0B51C86B83AAF80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		DBCD8BF24BB8EAC832037425551C96FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DD337ADC658325D0E14DA25344980226 /* Pods-JZScrollViewDataSet_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D15EC460179DDD87410283331022702A /* Pods-JZScrollViewDataSet_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F339FA5447725F0CB3EC8F414803D92C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 004B0085ED33D63A736DAF74EC809D98 /* ReplaceMe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		539F9889669191FFF9EC9B0B14F6A3A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 121690B15F04DAC452EE65988627DB4E;
-			remoteInfo = JZScrollViewDataSet;
-		};
-		53BBD8516C1472F317737DD2ED1F3713 /* PBXContainerItemProxy */ = {
+		B2171737B34E6E73ABEAFBC94BF730FA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8D099F61C8B25C9A933242EC38C56B1D;
 			remoteInfo = "Pods-JZScrollViewDataSet_Example";
 		};
+		FB60EB6C3A7C4E68FCBFD57AA3D479A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 121690B15F04DAC452EE65988627DB4E;
+			remoteInfo = JZScrollViewDataSet;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		004B0085ED33D63A736DAF74EC809D98 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = JZScrollViewDataSet/Classes/ReplaceMe.m; sourceTree = "<group>"; };
-		0B613BB32BD07F6A6FC51DA4F750EF92 /* JZScrollViewDataSet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JZScrollViewDataSet-Info.plist"; sourceTree = "<group>"; };
+		00DD34A928F6B74CB976B25C0297D8E7 /* JZScrollViewDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZScrollViewDataSet-prefix.pch"; sourceTree = "<group>"; };
 		1743E838FAA910A5D711060BA5533360 /* Pods-JZScrollViewDataSet_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JZScrollViewDataSet_Tests-dummy.m"; sourceTree = "<group>"; };
-		1EEA1B4B2DC4AE5AC0189CCC6BE2FEE0 /* JZScrollViewDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZScrollViewDataSet-umbrella.h"; sourceTree = "<group>"; };
 		2059343DB13381AE278ABDE430E792A3 /* Pods-JZScrollViewDataSet_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JZScrollViewDataSet_Example.modulemap"; sourceTree = "<group>"; };
 		22169E89150207F91EBBBBC89B8E98FA /* Pods-JZScrollViewDataSet_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JZScrollViewDataSet_Tests.modulemap"; sourceTree = "<group>"; };
 		2F9C6310875753CD8C85553194725BEF /* Pods-JZScrollViewDataSet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZScrollViewDataSet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FF4781D5BB14CE5AABAC94503B1B659 /* JZScrollViewDataSet */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JZScrollViewDataSet; path = JZScrollViewDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4452A415C2E03E43F8BCFFDF8F74E3EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		5366B93298C03B4BAFE1872807105267 /* Pods-JZScrollViewDataSet_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JZScrollViewDataSet_Tests-Info.plist"; sourceTree = "<group>"; };
+		5A1C5A717D3E3B5D3167E34CB0BC51B3 /* JZScrollViewDataSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JZScrollViewDataSet.h; path = JZScrollViewDataSet/Classes/JZScrollViewDataSet.h; sourceTree = "<group>"; };
+		5D046F9B5DF610ACE68723A2505C6E4B /* JZScrollViewDataSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JZScrollViewDataSet.debug.xcconfig; sourceTree = "<group>"; };
 		60C11A08CEFDA1B5BE9910F7CD440602 /* Pods-JZScrollViewDataSet_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JZScrollViewDataSet_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		664A613C56D8B8CADB7C788B5EA99AC7 /* Pods-JZScrollViewDataSet_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JZScrollViewDataSet_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7CA1727D29175E84686827BBE6E80848 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		850405D02DEDDE3E6E755F41E755B4B0 /* JZScrollViewDataSet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JZScrollViewDataSet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8638F119F8E4550FC3D4118A617BB5DE /* Pods-JZScrollViewDataSet_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JZScrollViewDataSet_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8CE941C88EC7C8B02A7729507B2D561B /* Pods-JZScrollViewDataSet_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JZScrollViewDataSet_Example-dummy.m"; sourceTree = "<group>"; };
 		8D3944D5DE0E48F340AAF2CA121D7609 /* Pods-JZScrollViewDataSet_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JZScrollViewDataSet_Tests"; path = Pods_JZScrollViewDataSet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D8610566CA5A323B4690DE46D8E4695 /* JZScrollViewDataSet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JZScrollViewDataSet.debug.xcconfig; sourceTree = "<group>"; };
-		8DF321B050C2D7A0725CDAFBB6B4C0B5 /* JZScrollViewDataSet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JZScrollViewDataSet.release.xcconfig; sourceTree = "<group>"; };
+		9381AD5675FF1C97913AFEB74A738FC8 /* JZScrollViewDataSet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JZScrollViewDataSet.release.xcconfig; sourceTree = "<group>"; };
 		94A65B09BD3C226414BEEA45DA78E126 /* Pods-JZScrollViewDataSet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZScrollViewDataSet_Example.release.xcconfig"; sourceTree = "<group>"; };
 		96E376ED9CAD004AAB4FBBBD9BBFBF49 /* Pods-JZScrollViewDataSet_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JZScrollViewDataSet_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A83FC6D44103D4350173D4CF33B5B388 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		A97346050654128A1D4E9BF5BB95B495 /* JZScrollViewDataSet.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JZScrollViewDataSet.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7B28A579525C28A366C0B37F1400424 /* JZScrollViewDataSet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JZScrollViewDataSet-Info.plist"; sourceTree = "<group>"; };
+		B4594BE1B316BE977F6912E49F23F69B /* JZScrollViewDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JZScrollViewDataSet.modulemap; sourceTree = "<group>"; };
 		B85DB4BF122AE85F335E74F841297E2D /* Pods-JZScrollViewDataSet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZScrollViewDataSet_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BD06D8D2D90057AF5BCE118412EC25E3 /* Pods-JZScrollViewDataSet_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-JZScrollViewDataSet_Example"; path = Pods_JZScrollViewDataSet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8F6CCB1A4AD93C332A3203D39F601B /* Pods-JZScrollViewDataSet_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JZScrollViewDataSet_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C02710688278DFCB67A400A89B202CD7 /* Pods-JZScrollViewDataSet_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JZScrollViewDataSet_Example-Info.plist"; sourceTree = "<group>"; };
+		C25807AA59033A454CBC221B5435ED2E /* JZScrollViewDataSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JZScrollViewDataSet.m; path = JZScrollViewDataSet/Classes/JZScrollViewDataSet.m; sourceTree = "<group>"; };
+		C4DFB94DDCECBC903BBE3B13A44256EE /* JZScrollViewDataSet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZScrollViewDataSet-umbrella.h"; sourceTree = "<group>"; };
+		C9C10BEF5366A48A9B593A4F281D45EC /* JZScrollViewDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JZScrollViewDataSet-dummy.m"; sourceTree = "<group>"; };
 		D15EC460179DDD87410283331022702A /* Pods-JZScrollViewDataSet_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JZScrollViewDataSet_Example-umbrella.h"; sourceTree = "<group>"; };
-		D7CCB75B4875B2B9E9D27B6AD1FAABC3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		D910EFF36AD79C1E4674F6EE9C543DF8 /* JZScrollViewDataSet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JZScrollViewDataSet.modulemap; sourceTree = "<group>"; };
-		DAC3753E5DC709313DDECE4A3F0F1B4D /* JZScrollViewDataSet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JZScrollViewDataSet-dummy.m"; sourceTree = "<group>"; };
-		E08D9B227BD07842FDA533D7E9A8B20B /* JZScrollViewDataSet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZScrollViewDataSet-prefix.pch"; sourceTree = "<group>"; };
 		E54CC23AC5698B685563C5C70CA225F6 /* Pods-JZScrollViewDataSet_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JZScrollViewDataSet_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FCB435BF16D9AA9D185675C7F877D330 /* Pods-JZScrollViewDataSet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JZScrollViewDataSet_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,27 +91,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F97D0AA1437EC7B1FB4863551B1CF496 /* Frameworks */ = {
+		AAA192753631994104F9E9F8E037F8F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCD8BF24BB8EAC832037425551C96FF /* Foundation.framework in Frameworks */,
+				47CE635C55258411799E29F18C4042D0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A68BC299FAF6649EADEC8A413496ED9 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A97346050654128A1D4E9BF5BB95B495 /* JZScrollViewDataSet.podspec */,
-				A83FC6D44103D4350173D4CF33B5B388 /* LICENSE */,
-				D7CCB75B4875B2B9E9D27B6AD1FAABC3 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		1DCF14439BAADB1C2318DD6947A0922E /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,15 +120,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6415C4DFA8CACB5D25D52DCCA4174989 /* JZScrollViewDataSet */ = {
+		5B5CDA2B56440740A51C2E72FA7A61BC /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				004B0085ED33D63A736DAF74EC809D98 /* ReplaceMe.m */,
-				1A68BC299FAF6649EADEC8A413496ED9 /* Pod */,
-				C817243EBBDF1D2F1F3EAEB2B8CA5E66 /* Support Files */,
+				850405D02DEDDE3E6E755F41E755B4B0 /* JZScrollViewDataSet.podspec */,
+				7CA1727D29175E84686827BBE6E80848 /* LICENSE */,
+				4452A415C2E03E43F8BCFFDF8F74E3EF /* README.md */,
 			);
-			name = JZScrollViewDataSet;
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		76DCD2FA7BD92E1176E479681499A901 /* Pods-JZScrollViewDataSet_Tests */ = {
@@ -153,6 +144,14 @@
 			);
 			name = "Pods-JZScrollViewDataSet_Tests";
 			path = "Target Support Files/Pods-JZScrollViewDataSet_Tests";
+			sourceTree = "<group>";
+		};
+		809EF91E57B9D83CCA684A147940E273 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE3B3970365448B959756F9FFBE81A2C /* JZScrollViewDataSet */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		BCF24620587ADBF60C813CA4E669D117 /* Pods-JZScrollViewDataSet_Example */ = {
@@ -172,38 +171,15 @@
 			path = "Target Support Files/Pods-JZScrollViewDataSet_Example";
 			sourceTree = "<group>";
 		};
-		C817243EBBDF1D2F1F3EAEB2B8CA5E66 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D910EFF36AD79C1E4674F6EE9C543DF8 /* JZScrollViewDataSet.modulemap */,
-				DAC3753E5DC709313DDECE4A3F0F1B4D /* JZScrollViewDataSet-dummy.m */,
-				0B613BB32BD07F6A6FC51DA4F750EF92 /* JZScrollViewDataSet-Info.plist */,
-				E08D9B227BD07842FDA533D7E9A8B20B /* JZScrollViewDataSet-prefix.pch */,
-				1EEA1B4B2DC4AE5AC0189CCC6BE2FEE0 /* JZScrollViewDataSet-umbrella.h */,
-				8D8610566CA5A323B4690DE46D8E4695 /* JZScrollViewDataSet.debug.xcconfig */,
-				8DF321B050C2D7A0725CDAFBB6B4C0B5 /* JZScrollViewDataSet.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JZScrollViewDataSet";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D0BFDB7DDAA8579D01AD74B2EA8D8E2C /* Development Pods */,
+				809EF91E57B9D83CCA684A147940E273 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				1DCF14439BAADB1C2318DD6947A0922E /* Products */,
 				E7F7528295BDE160B8FE427E54309ADD /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0BFDB7DDAA8579D01AD74B2EA8D8E2C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6415C4DFA8CACB5D25D52DCCA4174989 /* JZScrollViewDataSet */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -214,6 +190,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE3B3970365448B959756F9FFBE81A2C /* JZScrollViewDataSet */ = {
+			isa = PBXGroup;
+			children = (
+				5A1C5A717D3E3B5D3167E34CB0BC51B3 /* JZScrollViewDataSet.h */,
+				C25807AA59033A454CBC221B5435ED2E /* JZScrollViewDataSet.m */,
+				5B5CDA2B56440740A51C2E72FA7A61BC /* Pod */,
+				F339A8B14097D89CEB6D650E71CACF2F /* Support Files */,
+			);
+			name = JZScrollViewDataSet;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		E7F7528295BDE160B8FE427E54309ADD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +209,21 @@
 				76DCD2FA7BD92E1176E479681499A901 /* Pods-JZScrollViewDataSet_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F339A8B14097D89CEB6D650E71CACF2F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4594BE1B316BE977F6912E49F23F69B /* JZScrollViewDataSet.modulemap */,
+				C9C10BEF5366A48A9B593A4F281D45EC /* JZScrollViewDataSet-dummy.m */,
+				A7B28A579525C28A366C0B37F1400424 /* JZScrollViewDataSet-Info.plist */,
+				00DD34A928F6B74CB976B25C0297D8E7 /* JZScrollViewDataSet-prefix.pch */,
+				C4DFB94DDCECBC903BBE3B13A44256EE /* JZScrollViewDataSet-umbrella.h */,
+				5D046F9B5DF610ACE68723A2505C6E4B /* JZScrollViewDataSet.debug.xcconfig */,
+				9381AD5675FF1C97913AFEB74A738FC8 /* JZScrollViewDataSet.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JZScrollViewDataSet";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +237,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC5ADFD1588992EFC4101BD7129EDC66 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64475BB94DB4ECBC1E09A3F1B0E5E733 /* JZScrollViewDataSet.h in Headers */,
+				74A75121F63E7C76EE5F3889452F788A /* JZScrollViewDataSet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D9DC14F31B5E12653065BC6A178FF9BB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,25 +254,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F58A9EC02FA6EB25BFED7F520145D81F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1842B5775DED90091626BB5ECD64EA51 /* JZScrollViewDataSet-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		121690B15F04DAC452EE65988627DB4E /* JZScrollViewDataSet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 795DFC033B88C06EBFAA6F51B97E9219 /* Build configuration list for PBXNativeTarget "JZScrollViewDataSet" */;
+			buildConfigurationList = 801F5C1C9E76082AF813721CC8D75A72 /* Build configuration list for PBXNativeTarget "JZScrollViewDataSet" */;
 			buildPhases = (
-				F58A9EC02FA6EB25BFED7F520145D81F /* Headers */,
-				F8165B66978D8654A1E7D48488E67C22 /* Sources */,
-				F97D0AA1437EC7B1FB4863551B1CF496 /* Frameworks */,
-				2BA8F3E335FF9A9B77E5D8CE27BCE15A /* Resources */,
+				CC5ADFD1588992EFC4101BD7129EDC66 /* Headers */,
+				E7A75DD7060E32B6472283A369EB2D96 /* Sources */,
+				AAA192753631994104F9E9F8E037F8F1 /* Frameworks */,
+				B6E9B0358A1AC09D3CBD9F775F29808D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -283,7 +287,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				3DFF042F35D4867B1BFEBBB7A0163545 /* PBXTargetDependency */,
+				92F845B80C53ACDAEF882EFBB118EF10 /* PBXTargetDependency */,
 			);
 			name = "Pods-JZScrollViewDataSet_Example";
 			productName = Pods_JZScrollViewDataSet_Example;
@@ -302,7 +306,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2841AA43675F70E989976B1432F6F803 /* PBXTargetDependency */,
+				9811C31F4CDBBD039B0947C5F489E4B5 /* PBXTargetDependency */,
 			);
 			name = "Pods-JZScrollViewDataSet_Tests";
 			productName = Pods_JZScrollViewDataSet_Tests;
@@ -339,14 +343,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2BA8F3E335FF9A9B77E5D8CE27BCE15A /* Resources */ = {
+		8435517EAADB318C3EB77AFCFBAD85EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8435517EAADB318C3EB77AFCFBAD85EE /* Resources */ = {
+		B6E9B0358A1AC09D3CBD9F775F29808D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,96 +383,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8165B66978D8654A1E7D48488E67C22 /* Sources */ = {
+		E7A75DD7060E32B6472283A369EB2D96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC347F1C76AA10332EE44619304D242 /* JZScrollViewDataSet-dummy.m in Sources */,
-				F339FA5447725F0CB3EC8F414803D92C /* ReplaceMe.m in Sources */,
+				5B0A7ED38F5AADED9D0F590AF267D58D /* JZScrollViewDataSet.m in Sources */,
+				2FD465B3AC527FB690C0294F23E01192 /* JZScrollViewDataSet-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2841AA43675F70E989976B1432F6F803 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-JZScrollViewDataSet_Example";
-			target = 8D099F61C8B25C9A933242EC38C56B1D /* Pods-JZScrollViewDataSet_Example */;
-			targetProxy = 53BBD8516C1472F317737DD2ED1F3713 /* PBXContainerItemProxy */;
-		};
-		3DFF042F35D4867B1BFEBBB7A0163545 /* PBXTargetDependency */ = {
+		92F845B80C53ACDAEF882EFBB118EF10 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JZScrollViewDataSet;
 			target = 121690B15F04DAC452EE65988627DB4E /* JZScrollViewDataSet */;
-			targetProxy = 539F9889669191FFF9EC9B0B14F6A3A0 /* PBXContainerItemProxy */;
+			targetProxy = FB60EB6C3A7C4E68FCBFD57AA3D479A0 /* PBXContainerItemProxy */;
+		};
+		9811C31F4CDBBD039B0947C5F489E4B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JZScrollViewDataSet_Example";
+			target = 8D099F61C8B25C9A933242EC38C56B1D /* Pods-JZScrollViewDataSet_Example */;
+			targetProxy = B2171737B34E6E73ABEAFBC94BF730FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		23873471325C6A14121714EA0599E9D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D8610566CA5A323B4690DE46D8E4695 /* JZScrollViewDataSet.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet.modulemap";
-				PRODUCT_MODULE_NAME = JZScrollViewDataSet;
-				PRODUCT_NAME = JZScrollViewDataSet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		511E8A31E235D19646617090EE9532C0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DF321B050C2D7A0725CDAFBB6B4C0B5 /* JZScrollViewDataSet.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet.modulemap";
-				PRODUCT_MODULE_NAME = JZScrollViewDataSet;
-				PRODUCT_NAME = JZScrollViewDataSet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		5369FAA893826E2C90EC6CF3E5340DB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2F9C6310875753CD8C85553194725BEF /* Pods-JZScrollViewDataSet_Tests.debug.xcconfig */;
@@ -529,6 +470,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76060ED0EF50EFA75E4C291EA2056437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9381AD5675FF1C97913AFEB74A738FC8 /* JZScrollViewDataSet.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet.modulemap";
+				PRODUCT_MODULE_NAME = JZScrollViewDataSet;
+				PRODUCT_NAME = JZScrollViewDataSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -631,6 +603,36 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		9C09C7B2D742743D82F66D7BAC068142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D046F9B5DF610ACE68723A2505C6E4B /* JZScrollViewDataSet.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JZScrollViewDataSet/JZScrollViewDataSet.modulemap";
+				PRODUCT_MODULE_NAME = JZScrollViewDataSet;
+				PRODUCT_NAME = JZScrollViewDataSet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		C9FFDF0A98B539BAEE49ECE05EE85178 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -752,11 +754,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		795DFC033B88C06EBFAA6F51B97E9219 /* Build configuration list for PBXNativeTarget "JZScrollViewDataSet" */ = {
+		801F5C1C9E76082AF813721CC8D75A72 /* Build configuration list for PBXNativeTarget "JZScrollViewDataSet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23873471325C6A14121714EA0599E9D5 /* Debug */,
-				511E8A31E235D19646617090EE9532C0 /* Release */,
+				9C09C7B2D742743D82F66D7BAC068142 /* Debug */,
+				76060ED0EF50EFA75E4C291EA2056437 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

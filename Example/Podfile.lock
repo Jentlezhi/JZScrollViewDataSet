@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JZScrollViewDataSet: 6c6e25ff2e7cfe721db6ad69da98bdf09edac685
+  JZScrollViewDataSet: d3c4c64b21f1e1421364233a3e2ae3d572c98ce9
 
 PODFILE CHECKSUM: 604a7ce5f198b79c8fa8a229579ed7e7f226f470
 

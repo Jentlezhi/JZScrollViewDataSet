@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "JZScrollViewDataSet.h"
 
 FOUNDATION_EXPORT double JZScrollViewDataSetVersionNumber;
 FOUNDATION_EXPORT const unsigned char JZScrollViewDataSetVersionString[];
