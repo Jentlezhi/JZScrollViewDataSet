@@ -1,0 +1,6 @@
+framework module Pods_JZScrollViewDataSet_Tests {
+  umbrella header "Pods-JZScrollViewDataSet_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

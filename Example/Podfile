@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'JZScrollViewDataSet_Example' do
+  pod 'JZScrollViewDataSet', :path => '../'
+
+  target 'JZScrollViewDataSet_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
