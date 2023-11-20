@@ -1,16 +1,45 @@
 PODS:
-  - JZScrollViewDataSet (0.1.0)
+  - JZScrollViewDataSet (0.1.1)
+  - LookinServer (1.2.4):
+    - LookinServer/Core (= 1.2.4)
+  - LookinServer/Core (1.2.4)
+  - Masonry (1.1.0)
+  - MJRefresh (3.5.0)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - JZScrollViewDataSet (from `../`)
+  - LookinServer
+  - Masonry
+  - MJRefresh (= 3.5.0)
+  - YYCategories (from `https://github.com/Jentlezhi/YYCategories.git`)
+
+SPEC REPOS:
+  trunk:
+    - LookinServer
+    - Masonry
+    - MJRefresh
 
 EXTERNAL SOURCES:
   JZScrollViewDataSet:
     :path: "../"
+  YYCategories:
+    :git: https://github.com/Jentlezhi/YYCategories.git
+
+CHECKOUT OPTIONS:
+  YYCategories:
+    :commit: 5e2a7a6288e6eb30bbf2400b31e88d65a24cf0f4
+    :git: https://github.com/Jentlezhi/YYCategories.git
 
 SPEC CHECKSUMS:
-  JZScrollViewDataSet: d3c4c64b21f1e1421364233a3e2ae3d572c98ce9
+  JZScrollViewDataSet: efb572259f7a0a68c216af82072d277ce495f9a7
+  LookinServer: 00c7588043ed8e7ab64ce55b9fb747e51371ad06
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 604a7ce5f198b79c8fa8a229579ed7e7f226f470
+PODFILE CHECKSUM: 8b8890e0f98fa502ff02133582d43ed9e054d92c
 
 COCOAPODS: 1.12.1

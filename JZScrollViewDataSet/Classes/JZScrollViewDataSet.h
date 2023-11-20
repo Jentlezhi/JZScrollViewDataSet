@@ -254,30 +254,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END
-
 #undef JZEmptyDataSetDeprecated
-
-@class JZScrollViewDataSet;
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface UIScrollView (ScrollViewDataSet)
-
-//类型
-typedef NS_ENUM(NSUInteger, JZScrollViewDataSetType) {
-    //空页面
-    JZScrollViewDataSetTypeEmpty,
-    //网络错误页面
-    JZScrollViewDataSetTypeError,
-    //不显示
-    JZScrollViewDataSetTypeHidden
-};
-
-@property(nonatomic, strong) id<JZEmptyDataSetSource,JZEmptyDataSetDelegate> dataSet;
-@property(nonatomic, assign) JZScrollViewDataSetType dataSetType;
-
-@end
 
 //配置文件
 @interface JZScrollViewDataSetConfig : NSObject
@@ -298,7 +275,19 @@ typedef NS_ENUM(NSUInteger, JZScrollViewDataSetType) {
 @end
 
 @interface JZScrollViewDataSet : NSObject<JZEmptyDataSetSource,JZEmptyDataSetDelegate>
+//配置文件
+@property(nonatomic, strong) JZScrollViewDataSetConfig *config;
+//空视图
+@property(nonatomic, strong) UIView *emptyView;
+//错误视图
+@property(nonatomic, strong) UIView *errorView;
+//点击回调[重新set会覆盖上次的实现]
+@property(nonatomic, copy) void(^tapBlock)(void);
 
+/**
+ 默认初始化方法
+ */
++ (instancetype)defaultDataSet;
 /**
  初始化DataSet
  @param emptyViewBlock    创建空视图的block
@@ -355,6 +344,23 @@ typedef NS_ENUM(NSUInteger, JZScrollViewDataSetType) {
                             errorView:(UIView * _Nullable (^__nullable)(void))errorViewBlock
                               config:(void (^__nullable)(JZScrollViewDataSetConfig *config))configBlock
                                  tap:(void(^__nullable)(void))tapBlock;
+
+@end
+
+@interface UIScrollView (ScrollViewDataSet)
+
+//类型
+typedef NS_ENUM(NSUInteger, JZScrollViewDataSetType) {
+    //空页面
+    JZScrollViewDataSetTypeEmpty,
+    //网络错误页面
+    JZScrollViewDataSetTypeError,
+    //不显示
+    JZScrollViewDataSetTypeHidden
+};
+
+@property(nonatomic, strong, nonnull) JZScrollViewDataSet *dataSet;
+@property(nonatomic, assign) JZScrollViewDataSetType dataSetType;
 
 @end
 

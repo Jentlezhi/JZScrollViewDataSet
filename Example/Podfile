@@ -4,10 +4,14 @@ platform :ios, '10.0'
 
 target 'JZScrollViewDataSet_Example' do
   pod 'JZScrollViewDataSet', :path => '../'
+  pod 'YYCategories',:git=>'https://github.com/Jentlezhi/YYCategories.git'
+  pod 'Masonry'
+  pod 'LookinServer', :configurations => ['Debug']
+  pod 'MJRefresh', '3.5.0'
 
   target 'JZScrollViewDataSet_Tests' do
     inherit! :search_paths
-
+    
     
   end
 end

@@ -1081,18 +1081,15 @@ Class jz_baseClassToSwizzleForTarget(id target)
 
 @implementation UIScrollView (ScrollViewDataSet)
 
-- (void)setDataSet:(id<JZEmptyDataSetSource,JZEmptyDataSetDelegate>)dataSet {
-    
-    if ([dataSet isKindOfClass:[JZScrollViewDataSet class]]) {
-        JZScrollViewDataSet *_dataSet = (JZScrollViewDataSet*)dataSet;
-        [_dataSet setValue:self forKey:@"scrollView"];
-    }
+- (void)setDataSet:(JZScrollViewDataSet *)dataSet {
+    [dataSet setValue:self forKey:@"scrollView"];
     self.emptyDataSetSource = dataSet;
     self.emptyDataSetDelegate = dataSet;
     objc_setAssociatedObject(self, @selector(dataSet), dataSet, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-- (id<JZEmptyDataSetSource,JZEmptyDataSetDelegate>)dataSet {
-    return objc_getAssociatedObject(self, _cmd);;
+
+- (JZScrollViewDataSet *)dataSet {
+    return objc_getAssociatedObject(self, _cmd);
 }
 
 - (void)setDataSetType:(JZScrollViewDataSetType)dataSetType {
@@ -1128,20 +1125,15 @@ Class jz_baseClassToSwizzleForTarget(id target)
 
 @property(nonatomic, weak) UIScrollView *scrollView;
 
-@property(nonatomic, strong) JZScrollViewDataSetConfig *config;
-
 @property(nonatomic, strong) UIView *containerView;
-
-@property(nonatomic, strong) UIView *emptyView;
-
-@property(nonatomic, strong) UIView *errorView;
-
-@property(nonatomic, copy) void(^tapBlock)(void);
 
 @end
 
 @implementation JZScrollViewDataSet
 
++ (instancetype)defaultDataSet {
+    return [JZScrollViewDataSet new];
+}
 
 + (instancetype)dataSetWithEmptyView:(UIView * _Nullable  (^__nonnull)(void))emptyViewBlock {
     return [self dataSetWithEmptyView:emptyViewBlock errorView:nil config:nil];
@@ -1302,6 +1294,14 @@ Class jz_baseClassToSwizzleForTarget(id target)
 - (void)tapAction {
     !self.tapBlock?:self.tapBlock();
 }
+/**
+ 添加点击事件
+ */
+- (void)addScrollViewTapActionIfNeeded {
+    if (_tapBlock && _scrollView != nil) {
+        [self addTapGestureForView:_scrollView];
+    }
+}
 #pragma mark - Lazy load
 - (JZScrollViewDataSetConfig *)config {
     if (!_config) {
@@ -1319,9 +1319,11 @@ Class jz_baseClassToSwizzleForTarget(id target)
 #pragma mark - Setter
 - (void)setScrollView:(UIScrollView *)scrollView {
     _scrollView = scrollView;
-    if (self.tapBlock) {
-        [self addTapGestureForView:scrollView];
-    }
+    [self addScrollViewTapActionIfNeeded];
+}
+- (void)setTapBlock:(void (^)(void))tapBlock {
+    _tapBlock = tapBlock;
+    [self addScrollViewTapActionIfNeeded];
 }
 
 @end
